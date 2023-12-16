@@ -1,0 +1,14 @@
+comment git:
+git init = inisialisasi folder .git
+git status = cek status
+git add nama_file = tambahkan file
+git add nama_folder/nama_file = tambahkan folder dan file
+git add . = tambahkan semua file
+git commit -m "_pesannya_" = menyimpan data atau save
+git remote add origin url_repo = tambahkan url dari repository
+git remote -v =
+git push -u origin master(nama branch) = menambahkan file ke github // jika sudah sekali pakai -u 
+                                         maka seterusnya tidak perlu memakainya kembali dan jadi spt ini : 
+                                         'git push' saja
+
+git log = menampilkan commit commit yang dilakukan
