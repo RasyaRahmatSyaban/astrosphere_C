@@ -1,0 +1,32 @@
+/* tag selector */
+h1{
+    color: aqua ; font-size: 15px;
+}
+/* class selector */
+ .text-small{
+    font-size: small;
+ }
+  
+ /* id selectero */
+ #brown {
+    color : brown;
+ }
+
+ /* atribut selector */
+ input[type = "text"]{
+    padding: 10px;
+ }
+
+ /* Universal selector */
+ *{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ .button{
+    padding: 10px;
+    border: 0.3rem;
+    color: black;
+    background-color: aqua;
+ }
+ /* pseuode selector */
+ 
