@@ -3,11 +3,11 @@
 }
 h1{
     text-align: center;
-    color: white;
+    /* color: white; */
     padding: 20px;
 }
 .header{
-    background-color: black;
+    /* background-color: black; */
     height: 80px;
 }
 .untad{
@@ -48,7 +48,19 @@ hr{
 }
 .sosmed{
     margin-bottom: 20px ;
+    width: 40px;
+    padding: 0 0.5rem;
+    transition: 1s;
 }
-body{
+/* .sosmed img{
+} */
+.sosmed:hover{
+    width: 50px;
+    
+}
+.sosmed1{
+    text-align: center;
+}
+/* body{
     background-color: rgb(53, 53, 56);
-}
+} */
