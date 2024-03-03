@@ -13,28 +13,59 @@
     /* border-radius: 20px; */
     /* flex-shrink: 1; */
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 5px 5px 2px 5px;
     text-align: center;
+    margin: 5px;
 }
 .navbar>h2{
-    padding: 10px;
+    padding: 7px 8px 8px 8px;
 }
 .navigasi{
     display: flex;
     flex-direction: row;
-    column-gap: 15px;
+    column-gap: 20px;
     color: rgb(161, 161, 161);
-    padding: 10px;
+    padding: 7px;
+    margin-top: 1.3px;
 }
 .navbutton{
     background-color: rgb(45, 102, 224);
-    /* padding: 5px; */
     border-radius: 10px;
-    width: 135px;
-    height: 40px;
-    color: white;
+    padding: 10px;
     text-align: center;
     font-weight: bold;
+}
+.navbutton > a{
+    color: white;
+    text-decoration: none;
+}
+.beranda{
+    color: rgb(161, 161, 161);;
+    border-color: transparent;
+    background-color: transparent;
+    font-size: large;
+    text-decoration: none;
+}
+.layanan{
+    color: rgb(161, 161, 161);;
+    border-color: transparent;
+    background-color: transparent;
+    font-size: large;
+    text-decoration: none;
+}
+.karya{
+    color: rgb(161, 161, 161);;
+    border-color: transparent;
+    background-color: transparent;
+    font-size: large;
+    text-decoration: none;
+}
+.tentang{
+    color: rgb(161, 161, 161);
+    border-color: transparent;
+    background-color: transparent;
+    font-size: large;
+    text-decoration: none;
 }
 .kanan > h4{
     text-align: center;
@@ -72,28 +103,37 @@
     background-color:rgb(45, 102, 224);
     color: white;
     font-weight: bold;
+    border-color: transparent;
 }
 .beranda:hover{
     color: rgb(45, 102, 224);
+    border-color: transparent;
 }
 .layanan:hover{
     color: rgb(45, 102, 224);
+    border-color: transparent;
 }
 .karya:hover{
     color: rgb(45, 102, 224);
+    border-color: transparent;
 }
 .tentang:hover{
     color: rgb(45, 102, 224);
+    border-color: transparent;
 }
 
 .button:hover{
     width: 165px;
     height: 50px;
-    transition: 0.5s;
+    transition: 0.3s;
     color: black;
     font-weight: bold;
 }
-.navbutton:hover{
+.navbutton > a:hover{
     color: rgb(0, 0, 0);
     transition: 0.5s;
 }
+/* .navbutton:hover{
+color: rgb(0,0,0);
+transition: 0.5s;
+} */
