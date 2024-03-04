@@ -2,104 +2,81 @@
     margin: 0;
 }
 .container_nav{
+    flex-wrap: wrap;
     display: flex;
-    column-gap: 23% ;
-    /* padding: 5px; */
-    justify-content: center;
+    justify-content: space-between;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .navbar{
-    flex-direction: row;
-    /* border-radius: 20px; */
-    /* flex-shrink: 1; */
-    flex-wrap: wrap;
+    display: flex;
     padding: 5px 5px 2px 5px;
     text-align: center;
-    margin: 5px;
-}
-.navbar>h2{
-    padding: 7px 8px 8px 8px;
 }
 .navigasi{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     column-gap: 20px;
     color: rgb(161, 161, 161);
     padding: 7px;
-    margin-top: 1.3px;
+    margin: 7px;
 }
 .navbutton{
-    background-color: rgb(45, 102, 224);
+    margin: 4px;
     border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-.navbutton > a{
+    padding: 12px 8px 6px 8px;
+    background-color: rgb(45, 102, 224);
     color: white;
     text-decoration: none;
+    font-size: 1.3vmax;
+    font-weight: bold;
+}
+.judul{
+    padding: 7px 8px 8px 8px;
+    text-decoration: none;
+    color: black;
+    font-size: 2.5vmax;
 }
 .beranda{
-    color: rgb(161, 161, 161);;
-    border-color: transparent;
-    background-color: transparent;
-    font-size: large;
-    text-decoration: none;
-}
-.layanan{
-    color: rgb(161, 161, 161);;
-    border-color: transparent;
-    background-color: transparent;
-    font-size: large;
-    text-decoration: none;
-}
-.karya{
-    color: rgb(161, 161, 161);;
-    border-color: transparent;
-    background-color: transparent;
-    font-size: large;
-    text-decoration: none;
-}
-.tentang{
     color: rgb(161, 161, 161);
     border-color: transparent;
     background-color: transparent;
-    font-size: large;
+    font-size: 1.6vmax;
     text-decoration: none;
 }
-.kanan > h4{
-    text-align: center;
-}
-.artikel{
-    text-align: justify;
-    padding: 70px 25px 30px 20px;
-}
+
 .artikel_container{
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
-    margin-right: 60px;
-    margin-left: 60px;
-
+    margin: 20px;
+    padding: 50px 0px;
+    
+}
+.artikel{
+    margin: 10px;
+    flex-direction: column;
+    display: flex;
+    text-align: justify;
 }
 .artikel > img{
-    width: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 40vmax;
     border-radius: 120px 30px 30px 30px;
-    height: 350px;
+    
 }
 .artikel > h1{
-    font-size: 35px;
+    font-size: 2.3vmax
 }
 .artikel > p{
-    font-size: 20px;
+    font-size: 1.4vmax;
     color: rgb(161, 161, 161);
 }
 .button{
-    font-size: 15px;
     padding: 10px;
     border-radius: 10px;
-    width: 160px;
-    height: 45px;
+    font-size: 1.2vmax;
+    width: 12vmax;
+    height: 3.6vmax;
     background-color:rgb(45, 102, 224);
     color: white;
     font-weight: bold;
@@ -109,31 +86,63 @@
     color: rgb(45, 102, 224);
     border-color: transparent;
 }
-.layanan:hover{
-    color: rgb(45, 102, 224);
-    border-color: transparent;
-}
-.karya:hover{
-    color: rgb(45, 102, 224);
-    border-color: transparent;
-}
-.tentang:hover{
-    color: rgb(45, 102, 224);
-    border-color: transparent;
-}
-
 .button:hover{
-    width: 165px;
-    height: 50px;
+    width: 12.4vmax;
+    height: 4vmax;
     transition: 0.3s;
     color: black;
     font-weight: bold;
 }
-.navbutton > a:hover{
+.navbutton:hover{
     color: rgb(0, 0, 0);
     transition: 0.5s;
 }
-/* .navbutton:hover{
-color: rgb(0,0,0);
-transition: 0.5s;
-} */
+
+@media only screen and (max-width: 767px) {
+    .navbar{
+        align-items: center;
+    }
+    
+    .judul{
+        font-size: 2vmax;
+    }
+    .beranda{
+        font-size:1.7vmax ;
+    }
+    .navbutton{
+        font-size: 1.6vmax;
+        padding:5px 8px 6px 8px;
+    }
+
+}
+@media only screen and (max-width: 599px) {
+    
+    .artikel_container{
+    
+        
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0px;
+    }
+    .artikel{
+        margin: 10px;
+    }
+    .artikel > img{
+        align-self: center;
+        width: 85vmax;
+        height: 50%;
+    }
+    .artikel > h1{
+        padding: 0px 9px 0px 9px;
+        font-size: 3vmax;
+    }
+    .artikel > p{
+        padding: 0px 9px 0px 9px;
+        font-size: 2vmax;
+    }
+    .button{
+        padding: 5px 10px 5px 10px;
+        margin-left: 5px;
+        text-align:center ;
+    }
+}
