@@ -87,8 +87,8 @@
     border-color: transparent;
 }
 .button:hover{
-    width: 12.4vmax;
-    height: 4vmax;
+    width: 12.3vmax;
+    height: 3.8vmax;
     transition: 0.3s;
     color: black;
     font-weight: bold;
@@ -116,7 +116,6 @@
 
 }
 @media only screen and (max-width: 599px) {
-    
     .artikel_container{
     
         
@@ -129,7 +128,8 @@
     }
     .artikel > img{
         align-self: center;
-        width: 85vmax;
+        /* width: 85vmax; */
+        width: 100%;
         height: 50%;
     }
     .artikel > h1{
