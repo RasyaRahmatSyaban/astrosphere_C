@@ -45,7 +45,7 @@ document.addEventListener("keydown",function (event) {
 document.addEventListener("keyup",function (event) {
     keyup.innerText = `melepas: ${event.key}`;
 });
-document.addEventListener("pressed",function (event) {
+document.addEventListener("keypress",function (event) {
     pressed.innerText = `menahan: ${event.key}`;
 });
 
